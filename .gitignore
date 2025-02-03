@@ -1,0 +1,23 @@
+# Ignore configuration files with sensitive data
+config.properties
+
+# Ignore compiled Java class files
+*.class
+target/
+out/
+
+# Ignore IDE-related files
+.idea/
+.vscode/
+*.iml
+
+# Ignore logs
+*.log
+
+# Ignore build files
+*.jar
+*.war
+*.ear
+
+all.txt
+
