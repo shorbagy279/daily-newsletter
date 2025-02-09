@@ -104,15 +104,15 @@ public class NewsActivitiesImpl implements NewsActivities {
         
         List<Subscriber> subscribers = DatabaseHelper.getSubscribersByCategory(category);
 
-       /*try {
-            EmailSender.sendEmail(
-                "a.elshorbagy@yodawy.com", // Hardcoded recipient
-                "Your Daily News Digest"+subscribers.size(), 
-                htmlContent
-            );
-        } catch (Exception e) {
-            throw new RuntimeException("Failed to send email", e);
-        }*/
+    //    try {
+    //         EmailSender.sendEmail(
+    //             "abdulrhmanm557@gmail.com", // Hardcoded recipient
+    //             "Your Daily News Digest"+subscribers.size(), 
+    //             htmlContent
+    //         );
+    //     } catch (Exception e) {
+    //         throw new RuntimeException("Failed to send email", e);
+    //     }
         if (subscribers.isEmpty()) {
             System.out.println("No subscribers found for category: " + category);
             return;
